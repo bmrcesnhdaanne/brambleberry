@@ -14,6 +14,11 @@
     text-align: center;
 }
 
+.header-image {
+    width: 400px;
+    height: auto;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -87,7 +92,7 @@ footer a {
 .logo {
     width: 300px;
     height: auto;
-    max-width: 100%;
+    max-width: 50%;
 }
 
 .nav-and-logo {
@@ -97,14 +102,7 @@ footer a {
     text-align: center;
 }
 
-.icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-@media all and (max-width: 811px) and (min-width: 480px) {
+@media all and (max-width: 810px) {
     .main-header {
         border-bottom: 3px solid #b75871;
         padding: 3px;
@@ -119,6 +117,11 @@ footer a {
         align-items: center;
         flex-direction: column;
         text-align: center;
+    }
+
+    .header-image {
+        width: 400px;
+        height: auto;
     }
     
     html, body {
@@ -193,7 +196,7 @@ footer a {
     }
     
     .logo {
-        width: 100%;
+        width: 25%;
         height: auto;
         max-width: 100%;
     }
@@ -230,7 +233,12 @@ footer a {
         display: flex;
         flex-direction: column;
     }
-    
+
+    .header-image {
+        width: 100%;
+        height: auto;
+    }
+
     footer {
         width: 100%;
         background-color: #fff2f4;
@@ -294,7 +302,7 @@ footer a {
     }
     
     .logo {
-        width: 300px;
+        width: 20%;
         height: auto;
         max-width: 100%;
     }
