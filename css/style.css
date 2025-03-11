@@ -10,25 +10,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
 
 h1 {
     margin: 20px;
     color: #7a173c;
-  }
+}
 
-body {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-color: #fffafb;
-    color: #7a173c;
-  }
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
 
 footer {
-    border-top: 3px solid #7a173c;
-    padding: 3px;
-    text-align: center;
+    width: 100%;
     background-color: #fff2f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    border-top: 3px solid #b75871;
+    padding: 5px;
 }
 
 .website-icon {
@@ -92,7 +97,7 @@ footer {
 }
 
 .content {
-    margin: 30px;
+    margin-top: 125px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,4 +121,13 @@ footer {
     align-self: center;
     border: black;
     margin: 5px;
+}
+
+.gallery-image {
+    display: block; /* Ensures it behaves properly in layout */
+    margin: 20px auto; 
+    width: clamp(300px, 50vw, 700px);
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

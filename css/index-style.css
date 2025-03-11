@@ -16,7 +16,7 @@
 }
 
 .header-image {
-    width: 400px;
+    width: clamp(100%, 50vw, 400px);
     height: auto;
 }
 
@@ -50,7 +50,7 @@ footer a {
     padding: 0;
     margin: 0;
     font-style: italic;
-    font-size: calc(3rem - clamp(0rem, 3vw, 2rem));
+    font-size: clamp(2.5rem, 2.5vw, 3.5rem);
     display: block;
     text-align: center;
 }
@@ -91,7 +91,7 @@ footer a {
 }
 
 .logo {
-    width: 300px;
+    width: calc(250px - clamp(0%, 5%, 7%));
     height: auto;
     max-width: 50%;
 }
@@ -101,73 +101,4 @@ footer a {
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
-
-@media all and (max-width: 810px) {
-    .main-header {
-        border-bottom: 3px solid #b75871;
-        padding: 3px;
-        transition: border-color 0.3s ease-in-out;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background-color: #fff2f4;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-    }
-
-    .header-image {
-        width: 400px;
-        height: auto;
-    }
-
-    .logo {
-        width: 20%;
-        height: auto;
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .main-header {
-        border-bottom: 3px solid #b75871;
-        padding: 3px;
-        transition: border-color 0.3s ease-in-out;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background-color: #fff2f4;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        width: 100%
-    }
-
-    .header-image {
-        width: 100%;
-    }
-
-    .main-nav a:hover {
-        text-decoration: underline;
-        color: #b75871;
-    }
-    
-    .header-link h1:hover {
-        text-decoration: underline;
-        color: #b75871;
-    }
-    
-    .logo {
-        width: 20%;
-        height: auto;
-        max-width: 100%;
-    }
 }
