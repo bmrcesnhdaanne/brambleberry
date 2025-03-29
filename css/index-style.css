@@ -75,7 +75,7 @@ footer a {
 
 .content {
     flex: 1;
-    margin-top: clamp(30vh, 35vh, 40vh);
+    margin-top: clamp(33vh, 34vh, 35vh);
     display: flex;
     flex-direction: column;
     align-items: center;
