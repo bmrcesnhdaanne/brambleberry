@@ -16,8 +16,13 @@
 }
 
 .header-image {
-    width: clamp(100%, 50vw, 400px);
-    height: auto;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .header-image {
+        width: 400px;
+    }
 }
 
 html, body {
@@ -73,12 +78,24 @@ footer a {
 
 .content {
     flex: 1;
-    margin-top: 275px;
+    margin-top: calc(275px + 2rem);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+    .content {
+      margin-top: calc(325px + 2rem); /* Increased for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .content {
+      margin-top: calc(375px + 2rem); /* Further increased for mobile */
+    }
+  }
 
 .header-link {
     text-decoration: none;
