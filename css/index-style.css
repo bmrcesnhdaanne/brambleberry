@@ -94,9 +94,9 @@ footer a {
 }
 
 .logo {
-    width: calc(250px - clamp(0%, 10%, 15%));
+    width: calc(250px - clamp(5vw, 10vw, 15vw));
     height: auto;
-    max-width: 50%;
+    max-width: 35vw;
 }
 
 .nav-and-logo {
