@@ -1,5 +1,5 @@
 .main-header {
-    border-bottom: 3px solid #7a173c;
+    border-bottom: 3px solid #b75871;
     padding: 3px;
     transition: border-color 0.3s ease-in-out;
     position: fixed;
@@ -10,6 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1000;
 }
 
 h1 {
@@ -31,9 +32,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10%;
+    height: 10vh;
     border-top: 3px solid #b75871;
-    padding: 5px;
 }
 
 .website-icon {
@@ -97,14 +97,13 @@ footer {
 }
 
 .content {
-    margin-top: 125px;
+    margin-top: clamp(20vh, 21vh, 22vh);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-}s
-
+}
 
 .header-link {
     text-decoration: none;
@@ -123,11 +122,128 @@ footer {
     margin: 5px;
 }
 
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .gallery-image {
-    display: block; /* Ensures it behaves properly in layout */
-    margin: 20px auto; 
-    width: clamp(300px, 50vw, 700px);
+    width: 100%;
+    max-width: 500px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #7a173c;
+    font-style: italic;
+}
+
+.order-info {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: #333;
+  }
+
+.section h2 {
+    text-decoration: underline;
+    text-underline-position: below;
+    text-underline-offset: 10px;
+}
+
+.option-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.option-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+  }
+
+.option-list ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.option-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    border: 1px solid #b75871;
+    background-color: transparent;
+}
+  
+.notes {
+    margin-top: 1.5rem;
+    background-color: #f8f0f2;
+    padding: 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+  
+.notes h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #7a173c;
+}
+  
+.notes ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+  
+.notes li {
+    position: relative;
+    margin-bottom: 0.4rem;
+}
+
+.footnote {
+    font-size: 1.0rem;
+    font-style: italic;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+.pdf-button {
+    display: inline-block;
+    background-color: #b75871;
+    color: #fff2f4;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+.pdf-button:hover {
+    background-color: #7a173c;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
