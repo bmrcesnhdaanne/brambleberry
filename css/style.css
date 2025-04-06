@@ -174,7 +174,6 @@ footer {
 
 .option-list li {
     position: relative;
-    padding-left: 1.5rem;
     margin-bottom: 0.5rem;
     line-height: 1.4;
   }
@@ -183,17 +182,6 @@ footer {
     list-style: none;
     padding-left: 0;
     margin: 0;
-}
-
-.option-list li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0.5rem;
-    width: 0.7rem;
-    height: 0.7rem;
-    border: 1px solid #b75871;
-    background-color: transparent;
 }
   
 .notes {
