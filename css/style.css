@@ -16,6 +16,8 @@
 h1 {
     margin: 20px;
     color: #7a173c;
+    font-family: "Thasadith", sans-serif;
+    font-weight: 700;
 }
 
 html, body {
@@ -70,24 +72,29 @@ footer {
     transform: scale(1.1);
 }
 
-/* Style the navigation links */
 .main-nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     font-style: italic;
     font-size: large;
+    font-family: "Thasadith", sans-serif;
+    font-weight: 700;
 }
   
 .main-nav li {
     display: inline;
     margin-right: 20px;
+    font-family: "Thasadith", sans-serif;
+    font-weight: 700;
 }
 
 .main-nav a {
     text-decoration: none;
     color: #7a173c;
     transition: text-decoration 0.3s ease-in-out;
+    font-family: "Thasadith", sans-serif;
+    font-weight: 700;
 }
 
 /* Underline text on hover */
@@ -103,6 +110,13 @@ footer {
     align-items: center;
     flex-direction: column;
     text-align: center;
+    font-family: "Thasadith", sans-serif;
+    font-weight: 700;
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2rem;
 }
 
 .header-link {
@@ -190,12 +204,16 @@ footer {
     padding: 1rem;
     border-radius: 6px;
     font-size: 0.9rem;
+    font-family: "Thasadith", sans-serif;
+    font-weight: 700;
 }
   
 .notes h4 {
     margin-top: 0;
     margin-bottom: 0.5rem;
     color: #7a173c;
+    font-family: "Thasadith", sans-serif;
+    font-weight: 700;
 }
   
 .notes ul {
@@ -234,4 +252,11 @@ footer {
 .pdf-button:hover {
     background-color: #7a173c;
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+iframe {
+    width: 100%;
+    height: 1900px;
+    border: none;
+    overflow: hidden;
 }
