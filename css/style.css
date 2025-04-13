@@ -272,6 +272,7 @@ iframe {
 
 .contact-photo {
     margin: 1rem;
+    margin-top: 2rem;
     background-color: #f8d6de;
     border-radius: 1rem;
     width: clamp(10%, 90vw, 700px)
@@ -286,11 +287,13 @@ iframe {
     font-family: "Thasadith", sans-serif;
     font-weight: 600;
     color: #7a173c;
+    font-size: clamp(1vw, 2rem, 3vw);
 }
 
 .email-hyperlink a {
     text-decoration: none;
     font-family: "Thasadith", sans-serif;
     font-weight: 400;
+    font-size: clamp(.9vw, 1.5rem, 2.5vw);
     color: #7a173c;
 }
