@@ -281,3 +281,18 @@ iframe {
     width: 90%;
     padding: 1rem;
 }
+
+.email-hyperlink h3 {
+    text-decoration: underline;
+    font-family: "Thasadith", sans-serif;
+    font-weight: 700;
+    color: #7a173c;
+}
+
+.email-hyperlink a {
+    text-decoration: none;
+    font-style: italic;
+    font-family: "Thasadith", sans-serif;
+    font-weight: 700;
+    color: #7a173c;
+}
