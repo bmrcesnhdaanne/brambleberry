@@ -200,12 +200,12 @@ footer {
   
 .notes {
     margin-top: 1.5rem;
-    background-color: #f8f0f2;
+    background-color: #f8d6de;
     padding: 1rem;
     border-radius: 6px;
     font-size: 0.9rem;
     font-family: "Thasadith", sans-serif;
-    font-weight: 700;
+    font-weight: 400;
 }
   
 .notes h4 {
