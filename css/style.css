@@ -269,3 +269,15 @@ iframe {
     border: none;
     overflow: hidden;
 }
+
+.contact-photo {
+    margin: 1rem;
+    background-color: #f8d6de;
+    border-radius: 1rem;
+    width: clamp(10%, 90vw, 700px)
+}
+
+.contact-photo img {
+    width: 90%;
+    padding: 1rem;
+}
