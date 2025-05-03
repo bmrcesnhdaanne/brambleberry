@@ -189,7 +189,7 @@ footer {
 }
 
 .option-card h3 {
-    font-size: clamp(1rem, 3.2vw, 25px); 
+    font-size: clamp(1rem, 3.2vw, 25px);
 }
 
 .option-list li {
