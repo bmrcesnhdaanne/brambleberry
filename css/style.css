@@ -8,9 +8,14 @@
     right: 0;
     background-color: #fff2f4;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
     z-index: 1000;
+    height: auto; /* Allow height to adjust to content */
+    min-height: clamp(200px, 15vh, 300px);
+    padding-top: 3vh;
+    width: "100%";
 }
 
 h1 {
@@ -37,6 +42,7 @@ footer {
     align-items: center;
     padding: 1rem;
     border-top: 3px solid #b75871;
+    gap: 1rem;
 }
 
 .website-icon {
@@ -105,7 +111,7 @@ footer {
 }
 
 .content {
-    margin-top: clamp(20vh, 21vh, 22vh);
+    margin-top: clamp(200px, 18vh, 300px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,7 +143,7 @@ footer {
 }
 
 .gallery-content {
-    margin-top: clamp(20vh, 21vh, 22vh);
+    margin-top: clamp(275px, 18vh, 400px);
     display: flex;
     justify-content: center;
     align-items: center;
